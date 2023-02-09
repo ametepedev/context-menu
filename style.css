@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+:root {
+    --color-one: #7abcf3;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-one);
+    user-select: none;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-menu{
+  width: 170px;
+  background: #fff;
+  z-index: 900000;
+  border-radius: 1.2rem;
+  position: absolute;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  transition: .5s;
+  display: none;
+}
+.context-menu ul:first-child{
+  padding: 10px;
+}
+.context-menu ul:first-child li{
+  list-style: none;
+  font-size: 14px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0 5px 0 10px;
+  width: 100%;
+  cursor: pointer;
+  color: #363949;
+  gap: 10px;
+  border-radius: 5px;
+}
+.context-menu ul:first-child li:hover{
+  background: rgba(132,139,200,0.18);
+}
+
+.context-menu ul:last-child{
+  padding: 10px;
+  border-top: 1px solid rgba(132,139,200,0.18);
+}
+.context-menu ul:last-child li{
+  list-style: none;
+  font-size: 14px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0 5px 0 10px;
+  width: 100%;
+  cursor: pointer;
+  color: #363949;
+  gap: 10px;
+  border-radius: 5px;
+}
+.context-menu ul:last-child li:hover{
+  background: rgba(132,139,200,0.18);
+}
+
+.context-menu ul:last-child li:last-child{
+  color: #7abcf3;
+}
